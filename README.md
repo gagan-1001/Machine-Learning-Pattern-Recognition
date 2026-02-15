@@ -5,11 +5,11 @@
 ## Plots and Outputs
 
 ![Plaksha_Faculty](assests/plaksha_faculty_faces.jpg)
-![face_clusters](assests/face_clusters.jpg)
-![face_clusters](assests/cluster_and_centroids.jpg)
-![template_image](assests/template_image.jpg)
-![classification_of_template_image](assests/classification_of_template_image.jpg)
-![Plaksha_Faculty](assests/classification_of_template_image_scatter.jpg)
+![face_clusters](assests/face_clusters.png)
+![face_clusters](assests/cluster_and_centroids.png)
+![template_image](assests/template_image.png)
+![classification_of_template_image](assests/classification_of_template_image.png)
+![Plaksha_Faculty](assests/classification_of_template_image_scatter.png)
 
 
 ---
