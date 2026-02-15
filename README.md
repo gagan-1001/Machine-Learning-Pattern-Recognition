@@ -15,6 +15,7 @@
 ---
 ## Used Elbow Method to find Optimal K
 WCSS values were computed for K = 1 → 10.
+k = 3, is optimal
 
 ### Elbow Plot
 ![Elbow Method](assests/optimal_K.png)
@@ -28,7 +29,7 @@ WCSS values were computed for K = 1 → 10.
 - Used Haar Cascade classifier for face detection
 - Converted image to HSV color space
 - Extracted Hue and Saturation features from detected faces
-- Applied K-Means clustering (k=2)
+- Applied K-Means clustering 
 - Visualized clusters using scatter plots
 - Classified a template image using trained model
 
