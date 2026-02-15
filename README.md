@@ -20,8 +20,6 @@ k = 3, is optimal
 ### Elbow Plot
 ![Elbow Method](assests/optimal_K.png)
 
----
-
 
 
 ---
