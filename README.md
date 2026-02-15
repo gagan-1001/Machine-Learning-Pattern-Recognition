@@ -15,7 +15,7 @@
 ---
 ## Used Elbow Method to find Optimal K
 WCSS values were computed for K = 1 → 10.
-k = 3, is optimal
+
 
 ### Elbow Plot
 ![Elbow Method](assests/optimal_K.png)
