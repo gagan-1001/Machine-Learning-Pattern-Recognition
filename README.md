@@ -1,95 +1,56 @@
-- Each face is plotted in Hue-Saturation space.
-- Face thumbnails are displayed as markers.
+# MLPR - Assignment-5
+**Gaganpreet(U20240198)**
 
-### Cluster Visualization
-![Face Clusters](face_clusters.png)
+
+## Plots and Outputs
+
+![Plaksha_Faculty](assests/plaksha_faculty_faces.jpg)
+![face_clusters](assests/face_clusters.jpg)
+![face_clusters](assests/cluster_and_centroids.jpg)
+![template_image](assests/template_image.jpg)
+![classification_of_template_image](assests/classification_of_template_image.jpg)
+![Plaksha_Faculty](assests/classification_of_template_image_scatter.jpg)
+
 
 ---
-
-## 4️⃣ Elbow Method (Optimal K)
+## Used Elbow Method to find Optimal K
 WCSS values were computed for K = 1 → 10.
 
-Goal:
-- Find the “elbow point” where adding clusters stops giving major improvement.
-
 ### Elbow Plot
-![Elbow Method](optimal_K.png)
+![Elbow Method](assests/optimal_K.png)
 
 ---
 
-## 5️⃣ Cluster & Centroid Analysis
-- Scatter plot shows cluster separation.
-- Centroids represent cluster centers.
 
-### Clusters & Centroids
-![Clusters and Centroids](cluster_and_centroids.png)
+
+---
+## Methodology
+- Used Haar Cascade classifier for face detection
+- Converted image to HSV color space
+- Extracted Hue and Saturation features from detected faces
+- Applied K-Means clustering (k=2)
+- Visualized clusters using scatter plots
+- Classified a template image using trained model
+
+
+## Key Findings
+- Successfully detected 30 faces from the input image
+- Faces were grouped into 2 clusters based on color features
+- K-Means effectively separated faces with similar characteristics
+- Template image was correctly classified into one cluster
+
+## Results
+- Face detection worked efficiently using OpenCV
+- Clustering based on HSV features gave meaningful grouping
+- Visualization helped understand distribution of clusters
 
 ---
 
-## 6️⃣ Template Image Classification
-Steps:
-- Detect face in template image.
-- Extract HSV features.
-- Predict cluster using trained K-Means model.
 
-### Template Detection
-![Template Face Detection](template_image.png)
 
-### Template Cluster Assignment
-![Template Classification](classification_of_template_image.png)
 
-### Scatter Visualization with Template
-![Template Scatter Classification](classification_of_template_image_scatter.png)
-
+# Conclusion
+This lab demonstrates how computer vision and clustering techniques (K-means) can be used together to analyze and group facial data effectively.
 ---
 
-# 📊 Key Findings
-- Hue and Saturation features can effectively separate facial groups.
-- K-Means successfully grouped visually similar faces.
-- The Elbow Method helped determine a suitable number of clusters.
-- Template image classification worked using distance in feature space.
 
----
-
-# 🧠 Concepts Used
-- Haar Cascade Face Detection
-- HSV Color Space
-- Feature Engineering
-- K-Means Clustering
-- Elbow Method
-- Distance-Based Classification
-- Data Visualization with Matplotlib
-
----
-
-# 📈 Observations
-- Smaller K values create broader clusters.
-- Larger K values may over-segment data.
-- HSV-based features provide consistent grouping across lighting conditions.
-
----
-
-# ✅ Conclusion
-This experiment demonstrates how classical computer vision and unsupervised learning can be combined to perform **face grouping and classification** without deep learning.  
-Using HSV features with K-Means provided a simple yet effective pipeline for clustering and assigning new faces into existing categories.
-
----
-
-# 🚀 Future Improvements
-- Use additional features (texture, embeddings).
-- Apply PCA for dimensionality reduction.
-- Replace Haarcascade with deep learning detectors.
-- Experiment with different distance metrics (Cosine, Mahalanobis).
-
----
-
-# 🛠️ Technologies Used
-- Python
-- OpenCV
-- NumPy
-- Matplotlib
-- Scikit-learn
-
----
-
-⭐ *Lab-5: Face Detection & Clustering using Machine Learning*
